@@ -53,6 +53,7 @@
 export default function ({ nodes, links }, idAccessor, {
   nodeFilter = () => true
 } = {}) {
+  console.log('hello DAG')
   const graph = {};
   nodes.forEach(node => {
     const id = idAccessor(node);
